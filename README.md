@@ -1,33 +1,33 @@
-# `component-name`
+# `slot-fun`
 
-A Web Component for…
+A Web Component for investigating what can be done using the `<slot />` in web components.
 
-**[Demo](https://daviddarnes.github.io/component-template/demo.html)** | **[Further reading](https://darn.es/web-component-github-starter-template/)**
+**[Demo](https://bigandy.github.io/slot-fun/demo.html)** | **[Further reading](https://darn.es/web-component-github-starter-template/)**
 
 ## Examples
 
 General usage example:
 
 ```html
-<script type="module" src="component-name.js"></script>
+<script type="module" src="slot-fun.js"></script>
 
-<component-name>
+<slot-fun>
   <button>Button</button>
-</component-name>
+</slot-fun>
 ```
 
 Example using a fallback method:
 
 ```html
-<script type="module" src="component-name.js"></script>
+<script type="module" src="slot-fun.js"></script>
 
-<component-name>
+<slot-fun>
   <button>Button</button>
   <a href="#">Anchor</a>
-</component-name>
+</slot-fun>
 <style>
-  component-name:not(:defined) button,
-  component-name:defined a {
+  slot-fun:not(:defined) button,
+  slot-fun:defined a {
     display: none;
   }
 </style>
@@ -36,13 +36,13 @@ Example using a fallback method:
 Example using options or additional fallback method:
 
 ```html
-<script type="module" src="component-name.js"></script>
+<script type="module" src="slot-fun.js"></script>
 
-<component-name attribute="value">
+<slot-fun attribute="value">
   <button>Button</button>
-</component-name>
+</slot-fun>
 <style>
-  component-name[attribute="value"] {
+  slot-fun[attribute="value"] {
     outline: 1px solid red;
   }
 </style>
@@ -58,8 +58,8 @@ This Web Component allows you to:
 
 You have a few options (choose one of these):
 
-1. Install via [npm](https://www.npmjs.com/package/@daviddarnes/component-name): `npm install @daviddarnes/component-name`
-1. [Download the source manually from GitHub](https://github.com/daviddarnes/component-name/releases) into your project.
+1. Install via [npm](https://www.npmjs.com/package/@bigandy/slot-fun): `npm install @bigandy/slot-fun`
+1. [Download the source manually from GitHub](https://github.com/bigandy/slot-fun/releases) into your project.
 1. Skip this step and use the script directly via a 3rd party CDN (not recommended for production use)
 
 ### Usage
@@ -68,23 +68,20 @@ Make sure you include the `<script>` in your project (choose one of these):
 
 ```html
 <!-- Host yourself -->
-<script type="module" src="component-name.js"></script>
+<script type="module" src="slot-fun.js"></script>
 ```
 
 ```html
 <!-- 3rd party CDN, not recommended for production use -->
 <script
   type="module"
-  src="https://www.unpkg.com/@daviddarnes/component-name@1.0.0/component-name.js"
+  src="https://www.unpkg.com/@bigandy/slot-fun@1.0.0/slot-fun.js"
 ></script>
 ```
 
 ```html
 <!-- 3rd party CDN, not recommended for production use -->
-<script
-  type="module"
-  src="https://esm.sh/@daviddarnes/component-name@1.0.0"
-></script>
+<script type="module" src="https://esm.sh/@bigandy/slot-fun@1.0.0"></script>
 ```
 
 ## Credit

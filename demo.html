@@ -3,37 +3,37 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Demo of component-name Web Component" />
-    <title>component-name Web Component Demo</title>
+    <meta name="description" content="Demo of slot-fun Web Component" />
+    <title>slot-fun Web Component Demo</title>
 
-    <script type="module" src="component-name.js"></script>
+    <script type="module" src="slot-fun.js"></script>
   </head>
   <body>
     <h2>General usage example</h2>
-    <component-name>
+    <slot-fun>
       <button>Button</button>
-    </component-name>
-    <hr />
+    </slot-fun>
+    <!-- <hr />
     <h2>Example using a fallback method</h2>
-    <component-name>
+    <slot-fun>
       <button>Button</button>
       <a href="#">Anchor</a>
-    </component-name>
+    </slot-fun>
     <style>
-      component-name:not(:defined) button,
-      component-name:defined a {
+      slot-fun:not(:defined) button,
+      slot-fun:defined a {
         display: none;
       }
     </style>
     <hr />
     <h2>Example using options or additional fallback method</h2>
-    <component-name attribute="value">
+    <slot-fun attribute="value">
       <button>Button</button>
-    </component-name>
+    </slot-fun>
     <style>
-      component-name[attribute="value"] {
+      slot-fun[attribute="value"] {
         outline: 1px solid red;
       }
-    </style>
+    </style> -->
   </body>
 </html>
